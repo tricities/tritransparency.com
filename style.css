@@ -37,9 +37,11 @@ h3 {
   color: #000;
 }
 h1 {
-  margin: 0;
+  margin: 0px 0px 20px 0px;
+  padding-bottom: 40px;
   font-size: 2em;
   text-align: center;
+  border-bottom: 1px solid #eee
 }
 h2 {
   margin: 0 0 0.715em 0;
@@ -190,6 +192,9 @@ td p {
 }
 
 aside {
+  
+  padding-top: 20px;
+  border-top: 1px solid #eee;
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
