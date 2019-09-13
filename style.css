@@ -84,6 +84,15 @@ h1 {
   font-size: 1.8em;
   text-align: center;
 }
+
+h1 span {
+  margin-top: 5px;
+  display: block;
+  font-weight: 500;
+  font-size: 15px;
+  font-family: "Iowan Old Style", "Apple Garamond", "Palatino", "Georgia", "Times New Roman", serif;
+  line-height: 1.4em;
+}
 h2 {
   margin: 0 0 0.715em 0;
   padding-bottom: 0.715em;
