@@ -140,6 +140,7 @@ section:last-of-type {
 td {
   border: 1px solid #fff;
   width: 75px;
+  height: 40px;
 }
 .logos th,
 .electeds th {
@@ -313,9 +314,6 @@ aside {
   }
   th {
     font-size: 0.6875em;
-  }
-  td {
-    height: 40px;
   }
   #transparency {
     padding: 10px;
