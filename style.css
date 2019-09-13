@@ -205,8 +205,12 @@ th a:visited:hover {
   font-size: 14px;
   width: 100%;
   display: block;
-  opacity: .5;
-  text-shadow: 0px 1px rgba(255,255,255,0.8);
+  opacity: .3;
+  text-shadow: 0px 1px rgba(255,255,255,1);
+}
+.best a:link {
+  opacity: .7;
+  text-shadow: 0px 1px rgba(255,255,255,.8);
 }
 /*
 .part a:link:after {
@@ -222,6 +226,7 @@ td p {
   margin-top: 0;
   font-size: 14px;
 }
+
 .unknown {
   background: #ccc;
 }
@@ -310,7 +315,7 @@ aside {
     font-size: 0.6875em;
   }
   td {
-    height: 30px;
+    height: 40px;
   }
   #transparency {
     padding: 10px;
