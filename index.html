@@ -188,6 +188,12 @@
         $('.part').delegate('a', 'click', function () {
           $(this).parents('.part').parents('tr').next().slideToggle();
         });
+        $('.pass').delegate('a', 'click', function () {
+          $(this).parents('.pass').parents('tr').next().slideToggle();
+        });
+        $('.fail').delegate('a', 'click', function () {
+          $(this).parents('.fail').parents('tr').next().slideToggle();
+        });
         $('.best').delegate('a', 'click', function () {
           $(this).parents('.best').parents('tr').next().slideToggle();
         });
