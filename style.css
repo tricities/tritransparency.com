@@ -291,6 +291,14 @@ aside {
   margin-bottom: 10px;
 }
 
+.commentary {
+  text-align:center;
+  padding-top: 40px;
+  max-width: 450px;
+  margin: 0 auto !important;
+  display: block;
+}
+
 @media screen and (max-width: 31.25em) {
   h1 {
     font-size: 1.2em;
