@@ -38,7 +38,7 @@ h3 {
 }
 h1 {
   margin: 0;
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
 }
 h2 {
@@ -69,7 +69,7 @@ a:hover {
   color: #0d8ac1;
 }
 .content {
-  margin: 8.5em auto 0;
+  margin: 40px auto 0;
 }
 section {
   padding-bottom: 1.875em;
@@ -149,6 +149,13 @@ th a:visited:hover {
 .no {
   background: #ff4136;
 }
+
+.inc p {
+  display: none;
+}
+.unknown {
+  background: #ccc;
+}
 .help article {
   float: left;
   width: 60%;
@@ -163,7 +170,7 @@ th a:visited:hover {
 }
 @media screen and (max-width: 31.25em) {
   h1 {
-    font-size: 2.2em;
+    font-size: 2em;
   }
 }
 @media screen and (max-width: 48em) {
@@ -181,9 +188,6 @@ th a:visited:hover {
   .logos img {
     width: 24px;
     margin-bottom: 0.1875em;
-  }
-  .electeds {
-    display: none;
   }
   th {
     font-size: 0.6875em;

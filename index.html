@@ -11,405 +11,73 @@
   <body>
     <div class="content">
       <section>
-        <h1>Tri-Cities Gov't Transparency Scorecard</h1>
+        <h1>Tri-Cities Government<br/> Transparency Scorecard</h1>
         <div id="transparency" class="card">
           <table style="margin-left:auto; margin-right:auto">
-            <!-- <tr class="logos">
+            <tr class="logos">
               <th><img src="" alt="" title=""></th>
               <th><img src="" alt="" title=""></th>
               <th><img src="" alt="" title=""></th>
-            </tr> -->
+            </tr>
             <tr class="electeds">
               <th></th>
-              <th>City of Kennewick</th>
-              <th>City of Pasco</th>
-              <th>City of Richland</th>
-              <th>City of West Richland</th>
-              <th>Franklin County</th>
-              <th>Benton County</th>
-              <th>Port of Benton</th>
-              <th>Port of Kennewick</th>
-              <th>Port of Pasco</th>
-              <th>Kennewick School Board</th>
-              <th>Pasco School Board</th>
-              <th>Richland School Board</th>
+              <th>Kennewick</th>
+              <th>Pasco</th>
+              <th>Richland</th>
+              <th>West R.</th>
             </tr>
             <tr>
-              <th class="feature" class=""> <a href="#peerConn">PeerConnection API</a></th>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td title="using a shim" class="inc"></td>
-              <td class="no"></td>
+                <th><a href="#videoMeetings">Video meetings</a></th>
+                <td class="pass">
+                  <a href="#">✱</a>
+                </td>
+                <td class="best">
+                  <a href="#">⭐️</a>
+                <td class="part">
+                  <a href="#">✱</a>
+                </td>
+                <td title="" class="fail">
+                  <a href="#">✱</a>
+                </td>
             </tr>
             <tr class="about">
               <th></th>
-              <td colspan="8">The basic building block for connecting to peers. Defined by the W3C WebRTC Working Group.</td>
-            </tr>
-            <tr>
-              <th><a href="#getUserMedia">getUserMedia</a></th>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="no"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="8">The ability to request access to a user's webcam and microphone.</td>
-            </tr>
-            <tr>
-              <th><a href="#dataChannels">dataChannels</a></th>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="8">Data channel support comes in two flavors: "reliable" means they are guaranteed to arrive and arrive in the correct order, "unreliable" means that order doesn't matter and dropped messages are acceptable.</td>
-            </tr>
-            <tr>
-              <th><a href="#turn">TURN support</a></th>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="no"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="8">TURN servers are necessary for situations where STUN fails to produce two addressable endpoints. Which is a fancy way of saying, "getting around firewalls."</td>
-            </tr>
-            <tr>
-              <th><a href="#echo">Echo cancellation</a></th>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="no"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="8">This may be the most subjective item in this list. 3 or 4 users should be able to use a service like Talky without headphones on and not experience feedback problems.</td>
-            </tr>
-            <tr>
-              <th><a href="#mediaStream">MediaStream API</a></th>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="no"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="8">When you request user media or get media from a peer it's held in a MediaStream object. Having the ability to add/remove and mute tracks it possible to do audio processing and control bandwidth consumption. </td>
-            </tr>
-            <tr>
-              <th><a href="#mediaConstraints" title="for bandwidth control">mediaConstraints</a></th>
-              <td class="inc"></td>
-              <td class="inc"></td>
-              <td class="inc"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="inc"></td>
-              <td class="inc"></td>
-              <td class="no"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="8">The ability to specify restricted video sizes. This is important for bandwidth control. There are two aspects to this. The first is being able to specify constraints when first requesting access. The second is allowing you to apply constraints to an existing MediaStream.</td>
-            </tr>
-            <tr>
-              <th><a href="#multistream">Multiple Streams</a></th>
-              <td title="using 'Plan B'" class="inc"></td>
-              <td title="using 'Plan B'" class="inc"></td>
-              <td title="using 'Plan B'" class="inc"></td>
-              <td title="using 'Unified Plan'" class="yes"></td>
-              <td title="using 'Unified Plan'" class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="no"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="8">The ability to transport multiple audio and video streams on the same peerconnection. This is important for transporting multiple streams from a centralized server or rebroadcasting streams from other peers.</td>
-            </tr>
-            <tr>
-              <th><a href="#simulcast">Simulcast</a></th>
-              <td class="inc"></td>
-              <td class="inc"></td>
-              <td class="inc"></td>
-              <td class="inc"></td>
-              <td class="inc"></td>
-              <td class="no"></td>
-              <td class="inc"></td>
-              <td class="no"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="8">The ability to acquire media streams at multiple resolutions and framerates and send them to the peer. Chrome allows this through undocumented SDP mangling.</td>
-            </tr>
-            <tr>
-              <th><a href="#screenSharing">Screen Sharing</a></th>
-              <td title="requires an extension" class="inc"></td>
-              <td title="requires an extension" class="inc"></td>
-              <td title="requires an extension" class="inc"></td>
-              <td title="behind a whitelist." class="inc"></td>
-              <td title="behind a whitelist." class="inc"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="8">The ability to request access to a MediaStream of the computer screen. This is crucial for feature parity with existing communication solutions. In Chrome, this requires an <a href="https://github.com/otalk/getScreenMedia/tree/master/chrome-extension-sample">extension</a>, in Firefox there is a whitelist maintained by Mozilla. It's understandable there are some security and privacy concerns around screen sharing as a feature, so browser vendors are stepping cautiously as they try to work out how this should be implemented.</td>
-            </tr>
-            <tr>
-              <th><a href="#rebroadcast">Stream re-broadcasting</a></th>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="8">In order to support some of the more interesting topologies for routing data, we need to be able to take a MediaStream object from one peer and add it to another PeerConnection. Without this, the only way of doing multi-user is a mesh network or a centralized server.</td>
-            </tr>
-            <tr>
-              <th class="feature"> <a href="#getStats">getStats API</a></th>
-              <td class="inc"></td>
-              <td class="inc"></td>
-              <td class="inc"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="no"></td>
-              <td class="yes"></td>
-              <td class="no"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="8">The <a href="http://w3c.github.io/webrtc-stats/webrtc-stats">Statistics API</a> allows to query various information about the PeerConnection like the current bitrate, round trip time or the number of video frames decoded.</td>
-            </tr>
-            <tr>
-              <th class="feature"> <a href="#ortc">ORTC API</a></th>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="yes"></td>
-              <td class="no"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="8">An alternative to the PeerConnection API defined by the W3C ORTC Community Group.</td>
-            </tr>
-            <tr>
-              <th><a href="#h264">H.264 video</a></th>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="no"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="8">Support for H.264 video. A WebRTC compliant browser should support both H.264 and VP8 video.</td>
-            </tr>
-            <tr>
-              <th><a href="#vp8">VP8 video</a></th>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="inc"></td>
-              <td class="no"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="8">Support for VP8 video. A WebRTC compliant browser should support both H.264 and VP8 video.</td>
-            </tr>
-            <tr>
-              <th><a href="#interop">Solid interoperability</a></th>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="inc"></td>
-              <td class="no"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="8">Multiple browsers consistently being able to talk to each other is essential to making WebRTC a true web technology and not just something that makes for a nice demo.              </td>
-            </tr>
-            <tr>
-              <th><a href="#srcobject">srcObject in media element</a></th>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="no"></td>
-              <td class="yes"></td>
-              <td class="no"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="8">srcObject is the way to indicate to a video or audio element that it should play a MediaStream (createObjectURL is obsoleted in the standard and leaks streams until the document dies).</td>
-            </tr>
-            <tr>
-              <th><a href="#promisegum">Promise based getUserMedia</a></th>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="no"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="8">GetUserMedia has moved to mediaDevices (instead of hanging directly on navigator), and uses Promises instead of callbacks. In Chrome this was shimmed by <a href="https://github.com/webrtc/adapter">adapter.js</a>.</td>
-            </tr>
-            <tr>
-              <th><a href="#promisepc">Promise based PeerConnection API</a></th>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="inc"></td>
-              <td class="no"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="8">According to the latest W3C specification Promises should be used instead of callbacks. Natively supported in Chrome and Firefox, shims in <a href="https://github.com/webrtc/adapter">adapter.js</a> are available for older versions (or Edge which does not include a native RTCPeerConnection.</a>
-            </tr>
-            <tr>
-              <th><a href="#webaudio">WebAudio Integration</a></th>
-              <td class="yes"></td>
-              <td title="input only" class="inc"></td>
-              <td title="input only" class="inc"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="no"></td>
-              <td title="input only" class="inc"></td>
-              <td class="no"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="8">Support for modifying audio using WebAudio on both input and output is important.</td>
-            </tr>
-            <tr>
-              <th><a href="#mediarecorder">MediaRecorder Integration</a></th>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="8">Support for recording video/audio media streams to a local blob rather than sending to a remote peer.</td>
-            </tr>
-            <tr>
-              <th><a href="#canvas">Canvas Integration</a></th>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="8">Support for inserting generated or modified video into a MediaStream from a canvas. Important for funny hats (and sharing games, etc).</td>
-            </tr>
-            <tr>
-              <th><a href="#testing">Test support</a></th>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="no"></td>
-              <td class="yes"></td>
-              <td class="no"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="8">Support for commandline or javascript flags that use fake devices or files for getUserMedia and allow bypassing user prompts. This allows for automatic testing using services such as travis-ci which is <a href='http://rtc.io/testing-process.html'>described here</a>.</td>
+              <td colspan="5">
+                <p>Meetings should be recorded, streamed, with a searchable archive available online in their entirety. As many public meetings as possible should be available in this way, using the same system across the board.<p>
+                <p><strong>Kennewick</strong> just started streaming, so there is limited archival footage.</p>
+                <p><strong>Pasco</strong> gets the best-in-class score for having failt just City Council meetings.</p>
+                <p><strong>Richland</strong> does not have either the council’s workshops or their regular pre-meeting workshop online.</p> 
+                <p><strong>West Richland</strong> meetings are aired live on Public Access channel 191, but not available online at all.</p>
+              </td>
             </tr>
           </table>
-          <h3>Completion Score: <span class="score"></span>%</h3>
         </div>
-        <p>See an error? This site is open source on Github, so please let us know by <a href="https://github.com/webrtcftw/iswebrtcreadyyet.com/issues">opening an issue</a>.</p>
-      </section>
-      <section class="help cf">
-        <article>
-          <h2>Something</h2>
-        </article>
         <aside>
-          <a href="https://triciti.es" alt="Tri-Cities Daily" class="tcd-logo"></a>
-          <h3>Something</h3>
-          <p>
-            Something
-          </p>         
+        <h4>See an error? Disagree with an assesment?</h4>
+        <p>This site is open project. Provide your feedback by <a href="https://github.com/tricities/tritransparency.com/issues">open an issue</a> or <a href="mailto:transparency@triciti.es">send us an email</a>.</p>
         </aside>
-      </section>
     </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="http://static.andyet.com/tag.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script>
       $(function () {
         $('table').delegate('th a', 'click', function () {
           $(this).parents('tr').next().slideToggle();
         });
-        var yes = $('td.yes').length,
-            inc = $('td.inc').length,
-            no = $('td.no').length;
+        $('.part').delegate('a', 'click', function () {
+          $(this).parents('.part').parents('tr').next().slideToggle();
+        });
+        $('.best').delegate('a', 'click', function () {
+          $(this).parents('.best').parents('tr').next().slideToggle();
+        });
 
-        var score = ((yes + 0.5 * inc) / (yes + inc + no) * 100).toFixed(1);
+/*
+        var pass = $('td.pass').length,
+            part = $('td.part').length,
+            fail = $('td.fail').length;
+
+        var score = ((pass + 0.5 * part) / (pass + part + fail) * 100).toFixed(1);
         $('span.score').text(score);
+*/
       });
     </script>
   </body>
