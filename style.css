@@ -152,8 +152,7 @@ th a:visited:hover {
   color: #12acef;
 }
 .best {
-/*   background: #0000ff; */
-  background: #2ecc40;
+  background: #0af626;
   text-align: center;
 }
 .pass {
@@ -166,15 +165,17 @@ th a:visited:hover {
 .fail {
   background: #ff4136;
 }
-td a:link {
+.best a:link, .pass a:link, .part a:link, .fail a:link {
   text-align: center;
   font-weight: 500;
   color: #000;
   font-size: 15px;
   width: 100%;
   display: block;
-}/*
-
+  opacity: .5;
+  text-shadow: 0px 1px rgba(255,255,255,0.8);
+}
+/*
 .part a:link:after {
   content: " »"
 }
@@ -183,6 +184,7 @@ td a:link {
   display: none;
   font-size: 12px;
 }
+
 td p {
   margin-top: 0;
   font-size: 14px;
@@ -192,7 +194,6 @@ td p {
 }
 
 aside {
-  
   padding-top: 20px;
   border-top: 1px solid #eee;
   max-width: 400px;
