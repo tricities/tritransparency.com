@@ -24,8 +24,9 @@ body {
   -webkit-font-smoothing: antialiased;
   color: #272b2d;
   line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
-
 body {
     font-family: "Avenir Next", "Corbel", "Helvetica Neue", sans-serif;
 }
@@ -33,6 +34,41 @@ p {
   font-family: "Iowan Old Style", "Apple Garamond", "Palatino", "Georgia", "Times New Roman", serif;
   line-height: 1.4em;
 }
+
+    header { 
+      position: relative;
+    }
+  
+    .subscribe-form {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+    }
+    
+    .subscribe-email {
+      width: 100px;
+    }
+    
+    .tcd-logo h1 {
+      text-indent: -9999em;
+      background-image: url(https://cldup.com/axmhgHyAxt.svg);
+      background-repeat: no-repeat;
+      display: block;
+      width: 50px;
+      height: 30px;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+     	text-align: center;
+      font-size: 14px;
+      margin: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #eee;
+    }
+    nav form {
+      display: inline-block
+    }
 
 h1, h2, h3, h4, h5, h6
 strong {
@@ -45,15 +81,13 @@ h3 {
 }
 h1 {
   margin: 0px 0px 20px 0px;
-  padding-bottom: 40px;
-  font-size: 2em;
+  font-size: 1.8em;
   text-align: center;
-  border-bottom: 1px solid #eee
 }
 h2 {
   margin: 0 0 0.715em 0;
   padding-bottom: 0.715em;
-  font-size: 1.75em;
+  font-size: 1.5em;
 }
 h3 {
   margin: 1.5em 0;
@@ -64,6 +98,7 @@ h3 {
   line-height: 1.2;
 }
 p {
+  font-size: 15px;
   margin-bottom: 1.25em;
 }
 p:last-of-type {
@@ -94,15 +129,6 @@ section:last-of-type {
 .cf:after {
   clear: both;
 }
-/*
-.card {
-  border: 1px solid #e6eaed;
-  margin: 1.25em auto;
-  padding: 1.25em 2.5em 2.5em 2.5em;
-  box-shadow: #f2f4f6 0 2px 5px;
-}
-*/
-
 .card {
   margin-bottom: 40px;
   padding-bottom: 40px;
@@ -176,7 +202,7 @@ th a:visited:hover {
   text-align: center;
   font-weight: 500;
   color: #000;
-  font-size: 15px;
+  font-size: 14px;
   width: 100%;
   display: block;
   opacity: .5;
@@ -207,21 +233,61 @@ aside {
   margin-left: auto;
   margin-right: auto;
 }
-.help article {
-  float: left;
-  width: 60%;
+
+.feedback {
+  border: 1px solid #eee;
+  padding: 10px;
+  margin-top: 20px;
 }
-.help aside {
-  float: right;
-  width: 33%;
-  background: #f8f9fa;
-  padding: 1.25em;
-  text-align: center;
-  font-size: 0.8125em;
+
+.feedback input, .feedback label, .feedback textarea {
+  display: block;
 }
+
+.feedback input, .feedback textarea {
+  padding: 10px;
+  font-size: 15px;
+  font-family: "Iowan Old Style", "Apple Garamond", "Palatino", "Georgia", "Times New Roman", serif;
+  line-height: 1.4em;
+}
+
+.feedback input {
+  width: 50%;
+  min-width: 250px;
+}
+
+.feedback textarea {
+  width: 100%;
+  height: 100px;
+}
+
+.feedback label {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.feedback button {
+  padding: 10px 20px;
+  background: transparent;
+  border: 2px solid #ccc;
+  font-size: 14px;
+}
+
+.feedback button:hover {
+  border: 2px solid dodgerblue;
+  color: dodgerblue;
+  cursor: pointer;
+}
+
+.feedback textarea, .feedback input {
+  border: 1px solid #ccc;
+  outline: 0px;
+  margin-bottom: 10px;
+}
+
 @media screen and (max-width: 31.25em) {
   h1 {
-    font-size: 2em;
+    font-size: 1.2em;
   }
 }
 @media screen and (max-width: 48em) {

@@ -9,9 +9,18 @@
     <link rel="stylesheet" href="style.css?v=2">
   </head>
   <body>
+    <nav>
+    <a href="https://triciti.es" class="tcd-logo">
+      <h1>Tri-Cities Daily</h1>
+    </a>
+    <form action="https://www.getrevue.co/profile/tricities/add_subscriber" method="post" class="subscribe-form" name="revue-form"  target="_blank">
+      <input placeholder="Your email" type="email" name="member[email]" class="subscribe-email">
+      <input type="submit" value="Subscribe" name="member[subscribe]" class="subscribe-button">
+    </form>
+</nav>
     <div class="content">
       <section>
-        <h1>Tri-Cities Government<br/> Transparency Scorecard</h1>
+        <h1>Tri-Cities government<br/> transparency scorecard</h1>
         <div id="transparency" class="card">
           <table style="margin-left:auto; margin-right:auto">
             
@@ -31,7 +40,9 @@
               <th><a href="#public-meetings">Public meetings</a></th>
                 <td class="pass"></td>
                 <td class="pass"></td>
-                <td class="fail"></td>
+                <td class="fail">
+                  <a href="#">✱</a>
+                </td>
                 <td class="unknown"></td>
             </tr>
             <tr class="about">
@@ -78,7 +89,7 @@
               <td colspan="5">
                 <p>Meetings should be recorded and streamed, with a searchable archive available online in their entirety. As many public meetings as possible should be available in this way, using the same system across the board.<p>
                 <p><a href="">Kennewick</a> started streaming 9/2019, so there is limited archival footage.</p>
-                <p><a href="">Pasco</a> gets the best-in-class score for having more than just City Council meetings recorded.</p>
+                <p>★ <a href="">Pasco</a> gets the best-in-class score for having more than just City Council meetings recorded.</p>
                 <p><a href="">Richland</a> does not have either the council’s workshops or their regular pre-meeting workshop online.</p> 
                 <p><strong>West Richland</strong> meetings are aired live on Public Access channel 191, but not available online at all.</p>
               </td>
@@ -93,7 +104,7 @@
             <tr class="about">
               <th></th>
               <td colspan="5">
-                <p>Meeting minutes for both regular meetings and workshops should be complete and include discussion details rather than just presented as "action minutes" summarizing the decision points.<p>
+                <p>Meeting minutes for both regular meetings and workshops should include discussion details rather than just presented as "action minutes" summarizing the decision points.<p>
                 <p><a href="">Kennewick</a>.</p>
                 <p><a href="">Pasco</a>.</p>
                 <p><a href="">Richland</a>.</p> 
@@ -118,17 +129,24 @@
               <th></th>
               <td colspan="5">
                 <p>Municipal code should be online, easily searchable, and provide the ability to easily view and track change history, as well as link directly to a diff.<p>
-                <p><strong>Kennewick</strong> uses a tool that provides full detail of code changes, including the ability to <a href="https://library.municode.com/wa/kennewick/codes/code_of_ordinances/345610?nodeId=TIT2ADPE_CH2.04CICO_2.04.050PROF&showChanges=true">link to changes</a>.</p>
+                <p>★ <strong>Kennewick</strong> uses a tool that provides full detail of code changes, including the ability to <a href="https://library.municode.com/wa/kennewick/codes/code_of_ordinances/345610?nodeId=TIT2ADPE_CH2.04CICO_2.04.050PROF&showChanges=true">link to changes</a>.</p>
                 <p><a href="https://pasco.municipal.codes/">Pasco</a>'s tool is just a step below Kennewick's in user-friendliness, but meets all the criteria.</p>
                 <p><a href="https://www.codepublishing.com/WA/Richland/">Richland</a> and <a href="https://www.codepublishing.com/WA/WestRichland/">West Richland</a> use the same tool, which is adequate, but lacks the ability to easily track, compare, and link to versions.</p>
               </td>
             </tr>
           </table>
-          <p style="text-align:center; padding: 10px;"><a href="https://triciti.es">We’re</a> just getting started...</p>
+          <p style="text-align:center; padding: 10px;">We’re just getting started...</p>
         </div>
         <aside>
-        <h4>See an error? Disagree with an assesment?</h4>
-        <p>This site is open project. Provide your feedback by <a href="https://github.com/tricities/tritransparency.com/issues">open an issue</a> or <a href="mailto:transparency@triciti.es">send us an email</a>.</p>
+          <h4>See an error? Something missing? Disagree?</h4>
+          <p>This site is <a href="https://github.com/tricities/tritransparency.com">open project</a> based on <a href="https://meta.wikimedia.org/wiki/Cunningham%27s_Law">Cunningham’s law</a>. We consider criticism an important part of the process.
+          <p><a href="mailto:transparency@triciti.es">Send us an email</a> or provide your feedback here:</p>
+        <form class="feedback" name="feedback" netlify>
+          <label>Email</label>
+          <input type="email" name="email" />
+          <label>Comment <textarea name="feedback"></textarea></label>
+          <button type="submit">Send</button>
+        </form>  
         </aside>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
